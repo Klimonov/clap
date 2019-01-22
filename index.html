@@ -1,139 +1,714 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Центр лечебно-адаптивной педагогики и абилитации</title>
-  </head>
-  <body>
-    <div class="container-fluid main-container">
-      <div class="container"> 
-        <!-- header -->
-        <header class="row header">
-          <div class="col-3"><img src="img/logo.png"></div>
-          <div class="col-6 header-text">
-            <h1>ЦЕНТР<br>ЛЕЧЕБНО-АДАПТИВНОЙ ПЕДАГОГИКИ<br>И АБИЛИТАЦИИ</h1>
-            <h2 class="header-title">#Заниматься_НЕЛЬЗЯ_ждать</h2>
-            <p>Понедельник - Пятница: <strong>8:00-19:00</strong><br>Суббота - Воскресенье: <strong>выходной</strong></p>
-          </div>
-          <div class="col-3 puzzle-and-contacts">
-            <img src="img/header-puzzle.png">
-            <p>г. Ставрополь, ул. Ленина, 264<br><span class="header-phone-and-mail">8 (8652) 000-00-00<br>youmail@yandex.ru</span></p>
-          </div>
-        </header>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- menu -->
-        <div class="row menu">
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- <img src="img/logo.png" alt="Логотип" class="d-block-for-m logo-menu">
-                <img src="img/close.png" alt="Закрыть" class="d-block-for-m close-menu scroll-to-element" id="closeMenu"> -->
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Главная</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">О центре</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">ЦЛАПА</a>
-                        <a class="dropdown-item" href="#">Документы</a>
-                        <a class="dropdown-item" href="#">Новости</a>
-                        <a class="dropdown-item" href="#">СМИ о нас</a>
-                        <a class="dropdown-item" href="#">Фонды</a>
-                        <a class="dropdown-item" href="#">Партнеры</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Специалисты</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Партнеры</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Необычный магазин</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Центр лечебно-адаптивной педагогики и абилитации</title>
+</head>
+
+<body>
+  <div class="container-fluid main-container">
+    <div class="container">
+      <!-- header -->
+      <header class="row header">
+        <div class="col-3"><img src="img/logo.png"></div>
+        <div class="col-6 header-text">
+          <h1>ЦЕНТР<br>ЛЕЧЕБНО-АДАПТИВНОЙ ПЕДАГОГИКИ<br>И АБИЛИТАЦИИ</h1>
+          <h2 class="header-title">#Заниматься_НЕЛЬЗЯ_ждать</h2>
+          <p>Понедельник - Пятница: <strong>8:00-19:00</strong><br>Суббота - Воскресенье: <strong>выходной</strong></p>
+        </div>
+        <div class="col-3 puzzle-and-contacts">
+          <img src="img/header-puzzle.png">
+          <p>г. Ставрополь, ул. Ленина, 264<br><span class="header-phone-and-mail">8 (8652) 000-00-00<br>youmail@yandex.ru</span></p>
         </div>
 
-        <section class="main-section row">
-          <div class="col-3">
-            <div class="specialization post-left-top">
-              <h5>СПЕЦИАЛИЗАЦИЯ</h5>
-              <ul>
-                <li>Ранняя помощь (0-3)</li>
-                <li>Дошкольники (3-7)</li>
-                <li>Интеллектуальные нарушения</li>
-                <li>Реченвые нарушения</li>
-                <li>Проблемы поведения</li>
-                <li>Нарушения слуха</li>
-                <li>Расстройства аутического спектра</li>
-                <li>Нарушение сенсорной интеграции</li>
+
+        <!-- menu -->
+        <div class="menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- <img src="img/logo.png" alt="Логотип" class="d-block-for-m logo-menu">
+                  <img src="img/close.png" alt="Закрыть" class="d-block-for-m close-menu scroll-to-element" id="closeMenu"> -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">О центре</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">ЦЛАПА</a>
+                    <a class="dropdown-item" href="#">Документы</a>
+                    <a class="dropdown-item" href="#">Новости</a>
+                    <a class="dropdown-item" href="#">СМИ о нас</a>
+                    <a class="dropdown-item" href="#">Фонды</a>
+                    <a class="dropdown-item" href="#">Партнеры</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Специалисты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Партнеры</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Необычный магазин</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
               </ul>
             </div>
-            <div class="correction post-left-center">
-              <h5>КОРРЕКЦИОННО-РАЗВИВАЮЩЕЕ НАПРАВЛЕНИЕ</h5>
-              <ul>
-                <li>Томатис</li>
-                <li>Развитие речи</li>
-                <li>Игровое взаимодействие</li>
-                <li>Эмоционально-волевая коррекция</li>
-                <li>Нейро-развивающие методики</li>
-                <li>Тестирование базовых навыков коммуникации, обучения и речи (АВА)</li>
-                <li>Социально-бытовая адаптация</li>
-                <li>Детская, семейная психология</li>
-                <li>Сенсорная интеграция</li>
-                <li>Выездные циклы занятий(интенсивы)</li>
-                <li>Треннинги и семинары для родителей и специалистов</li>
-              </ul>
-            </div>
-            <div class="counseling post-left-bottom">
-              <h5>КОНСУЛЬТАТИВНОЕ НАПРАВЛЕНИЕ</h5>
-              <ul>
-                <li>Диагностика и разборка маршрута медицинской реабилитации и психолого-педагогического сопровождения</li>
-                <li>Применяется системно-пролонгированный подход и комплексная абилитация, начиная с раннего возраста</li>
-              </ul>
-            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="main-section row">
+        <div class="col-3">
+          <div class="post-left post-left-top">
+            <h5>СПЕЦИАЛИЗАЦИЯ</h5>
+            <ul>
+              <li>Ранняя помощь (0-3)</li>
+              <li>Дошкольники (3-7)</li>
+              <li>Интеллектуальные нарушения</li>
+              <li>Реченвые нарушения</li>
+              <li>Проблемы поведения</li>
+              <li>Нарушения слуха</li>
+              <li>Расстройства аутического спектра</li>
+              <li>Нарушение сенсорной интеграции</li>
+            </ul>
           </div>
-          <div class="col-6"><img src="img/brochure.png" alt="Брошура"></div>
-          <div class="col-3">
-            <div class="post-righ-top">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?</p>
-              <p>Алла Сергеевна<br>23.08.2018г</p>
-            </div>
-            <div class="post-righ-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?</p>
-              <p>Алла Сергеевна<br>23.08.2018г</p>
-            </div>
-            <div class="post-righ-bottom">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?</p>
-              <p>Алла Сергеевна<br>23.08.2018г</p>
-            </div>
+          <div class="post-left post-left-mid">
+            <h5>КОРРЕКЦИОННО-РАЗВИВАЮЩЕЕ НАПРАВЛЕНИЕ</h5>
+            <ul>
+              <li>Томатис</li>
+              <li>Развитие речи</li>
+              <li>Игровое взаимодействие</li>
+              <li>Эмоционально-волевая коррекция</li>
+              <li>Нейро-развивающие методики</li>
+              <li>Тестирование базовых навыков коммуникации, обучения и речи (АВА)</li>
+              <li>Социально-бытовая адаптация</li>
+              <li>Детская, семейная психология</li>
+              <li>Сенсорная интеграция</li>
+              <li>Выездные циклы занятий(интенсивы)</li>
+              <li>Треннинги и семинары для родителей и специалистов</li>
+            </ul>
           </div>
-        </section>
+          <div class="post-left post-left-bot">
+            <h5>КОНСУЛЬТАТИВНОЕ НАПРАВЛЕНИЕ</h5>
+            <ul>
+              <li>Диагностика и разборка маршрута медицинской реабилитации и психолого-педагогического сопровождения</li>
+              <li>Применяется системно-пролонгированный подход и комплексная абилитация, начиная с раннего возраста</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 brochure"><img src="img/brochure.png" alt="Брошура"></div>
+        <div class="col-3 reviews">
+          <div class="post-right post-right-top">
+            <br>
+            <hr>
+            <img class="quotes-left" src="img/quotes-left.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut
+              id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?<img class="quotes-right"
+                src="img/quotes-right.png" alt=""></p>
+            <hr>
+            <p class="reviewer-name"><span>Алла Сергеевна</span><br>23.08.2018г</p>
+          </div>
+          <div class="post-right post-right-mid">
+            <br>
+            <hr>
+            <img class="quotes-left" src="img/quotes-left.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut
+              id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?<img class="quotes-right"
+                src="img/quotes-right.png" alt=""></p>
+            <hr>
+            <img class="quotes-left" src="img/quotes-left.png" alt="">
+            <p class="reviewer-name"><span>Алла Сергеевна</span><br>23.08.2018г</p>
+          </div>
+          <div class="post-right post-right-bot">
+            <br>
+            <hr>
+            <img class="quotes-left" src="img/quotes-left.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis fuga, magnam placeat quas ut
+              id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure unde libero?Ipsa perspiciatis
+              fuga, magnam placeat quas ut id illum. Culpa labore quia id cumque autem, in facere, nobis porro iure
+              unde libero?<img class="quotes-right" src="img/quotes-right.png" alt=""></p>
+            <hr>
+            <p class="reviewer-name"><span>Алла Сергеевна</span><br>23.08.2018г</p>
+          </div>
+          <a href="#" class="read-more">ЧИТАТЬ БОЛЬШЕ ОТЗЫВОВ</a>
+        </div>
+      </section>
+
+      <!-- timetable -->
+      <section class="timetable">
+        <div class="timetable-header" id="timetable">
+          <h2>РАСПИСАНИЕ ЗАНЯТИЙ</h2><img class="" id="timetableArrow" src="img/timetable-arrow-down.png" alt="">
+        </div>
+        <div class="timetable-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"><img src="img/timetable-clock.png" alt=""></th>
+                  <th scope="col">ПОНЕДЕЛЬНИК</th>
+                  <th scope="col">ВТОРНИК</th>
+                  <th scope="col">СРЕДА</th>
+                  <th scope="col">ЧЕТВЕРГ</th>
+                  <th scope="col">ПЯТНИЦА</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">08:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">09:00</th>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">10:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class="green"><span>Занятие №2</span><br>Семенова Ольга Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-green.png"
+                        alt=""></div>
+                  </td>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class="green"><span>Занятие №2</span><br>Семенова Ольга Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-green.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">11:00</th>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">12:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">13:00</th>
+                  <td class="green"><span>Занятие №2</span><br>Семенова Ольга Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-green.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class="green"><span>Занятие №2</span><br>Семенова Ольга Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-green.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class="green"><span>Занятие №2</span><br>Семенова Ольга Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-green.png"
+                        alt=""></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">14:00</th>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">15:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">16:00</th>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class="blue"><span>Занятие №4</span><br>Осколкин Павел Павлович
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-blue.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">17:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class="yellow"><span>Занятие №1</span><br>Петрошевич Алла Сергеевна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-orange.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">18:00</th>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">19:00</th>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                  <td class=""><span></span><br></td>
+                  <td class="pink"><span>Занятие №3</span><br>Чугунова Вера Викторовна
+                    <div class="timetable-modal-link" data-toggle="modal" data-target=".timetable-cart"><img src="img/lesson-icon-pink.png"
+                        alt=""></div>
+                  </td>
+                  <td class=""><span></span><br></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- specialists -->
+      <section class="specialists">
+        <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
+        <div class="carousel">
+          <div>
+            <img src="img/doctor-1.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+          <div>
+            <img src="img/doctor-2.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+          <div>
+            <img src="img/doctor-3.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+          <div>
+            <img src="img/doctor-1.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+          <div>
+            <img src="img/doctor-2.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+          <div>
+            <img src="img/doctor-3.png" alt="">
+            <p class="doctor-name">Петров<br>Иван Сергеевич</p>
+            <p class="doctor-profession">детский психиатр</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+          </div>
+        </div>
+        <a href="#" class="show-all"><button class="btn btn-success">Посмотреть всех специалистов</button></a>
+      </section>
+
+      <section class="video">
+        <div id="video">
+          <img class="img-responsive" alt="" src="img/video-preview.png" />
+        </div>
 
 
+        <!-- modal video -->
+        <div id="modalVideo" class="modal fade video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+              <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body">
+                <iframe width="800" height="400" frameborder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- specialists -->
+      <section class="news">
+        <h2>НОВОСТИ</h2>
+        <div class="carousel">
+          <div>
+            <img src="img/news-1.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+          <div>
+            <img src="img/news-2.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+          <div>
+            <img src="img/news-3.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+          <div>
+            <img src="img/news-1.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+          <div>
+            <img src="img/news-2.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+          <div>
+            <img src="img/news-3.png" alt="">
+            <p class="news-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illo accusantium, minus doloribus aut,
+              autem est odio ea voluptates provident quidem alias vitae ullam? Laudantium saepe ab minima voluptates!
+              Consequatur!</p>
+            <p><a class="read-more" href="#">Читать далее..</a></p>
+            <div class="hr">
+              <hr>
+            </div>
+            <p class="post-date">10 июля 2018г.</p>
+          </div>
+        </div>
+        <a href="#" class="show-all"><button class="btn btn-success">Читать больше новостей</button></a>
+      </section>
+
+      <section class="map">
+        <div class="map-cart">
+          <h5>Часы работы:</h5>
+          <p>Мы всегда рады видеть Вас в следующие часы:</p>
+          <table>
+            <tr>
+              <td>Понедельник</td>
+              <td>08:00 - 19:00</td>
+            </tr>
+            <tr>
+              <td>Вторник</td>
+              <td>08:00 - 19:00</td>
+            </tr>
+            <tr>
+              <td>Среда</td>
+              <td>08:00 - 19:00</td>
+            </tr>
+            <tr>
+              <td>Четверг</td>
+              <td>08:00 - 19:00</td>
+            </tr>
+            <tr>
+              <td>Пятница</td>
+              <td>08:00 - 19:00</td>
+            </tr>
+            <tr>
+              <td>Суббота</td>
+              <td>Выходной</td>
+            </tr>
+            <tr>
+              <td>Воскресенье</td>
+              <td>Выходной</td>
+            </tr>
+          </table>
+          <h4>8 (8652) 000-00-00</h4>
+          <p>г.Ставрополь, ул. Ленина, 264.</p>
+        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ece0cb24dc6c2117188d9b51d13b9c9e2fb803b620287998bf4037e16d4b63f&amp;source=constructor"
+          width="100%" height="500" frameborder="0"></iframe>
+        <div class="green-line"></div>
+      </section>
+    </div>
+  </div>
+
+
+  <!-- MODAL WINDOWS -->
+
+  <!-- modal doctor -->
+  <div class="modal fade timetable-cart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-doctor">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> <img src="img/lesson-icon-orange.png" alt=""> Занятие №1</h5>
+          <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="container-fluid">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aliquid placeat illo voluptates
+            tenetur nulla repellat neque quibusdam debitis. Cumque sint doloremque possimus expedita nihil consequatur
+            obcaecati nobis impedit placeat nam. Pariatur repellendus dignissimos reiciendis dolore laudantium esse
+            aspernatur numquam ab deserunt, ratione maiores, repudiandae aliquid voluptas, quae molestiae! Alias nam
+            dolores numquam magni in dolore fugit aperiam ipsam nobis deleniti architecto obcaecati tempore eos velit
+            incidunt autem officia </p>
+          <div class="row">
+            <div class="col-4">
+              <a class="thumbnail fancybox" href="img/popup-doctor.png">
+                <img class="img-responsive" alt="" src="img/popup-doctor.png" />
+              </a>
+            </div>
+            <div class="col-8">
+              <h5 class="popup-header">Петрошевич Алла Сергеевна</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas sit numquam. Non dolorum odio
+                tempore facilis quam magni enim! Ut ea beatae eos aspernatur, accusantium expedita voluptates neque
+                laudantium. Nemo, consectetur suscipit </p>
+            </div>
+          </div>
+
+          <h4>Для записи на занятие<br>заполните пожалуйста Ваши данные</h4>
+          <form id="contactFormModal">
+            <div class="form-group">
+              <input type="phone" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="+7 (xxx) xxx-xx-xx"
+                required>
+            </div>
+            <div class="form-group">
+              <input type="name" class="form-control" id="exampleInputName2" placeholder="Ф.И.О." required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1"> <small id="emailHelp" class="form-text text-muted">Я
+                  даю свое согласие на обработку персональных данных
+                  и соглашаюсь с условиями и <span class="politic-text" data-toggle="modal" data-target=".politic">политикой
+                    конфиденциальности</span></small></label>
+            </div>
+            <button type="submit" class="btn btn-success">Записаться на занятие</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal politic -->
+  <div class="modal fade politic" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h5>
+          <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>1.Сбор информации.</p>
+          <p>Мы собираем информацию, которую Вы оставляете в формах обратной связи: купить в 1 клик, оформить
+            заказ, зарегистрироваться на сайте и любых других формах на нашем сайте (получить консультацию
+            специалиста, задать вопрос, заказать обратный звонок и т.д.). Информация может включать ваше
+            имя, фамилию, адрес электронной почты, номер телефона, паспортные данные и адрес
+            регистрации/фактического проживания.</p>
+          <p>2. Использование информации.</p>
+          <p>Информация, которую мы получаем от вас, может быть использована, чтобы:</p>
+          <ul>
+            <li>Связаться с вами;</li>
+            <li>Предложить услуги, соответствующие вашим индивидуальным запросам;</li>
+            <li>Улучшить наш сайт;</li>
+            <li>Устроить акцию, конкурс или организовать исследование.</li>
+          </ul>
+          <p>3. Защита Ваших личных данных.</p>
+          <p>Мы являемся единственным владельцем информации, собранной на данном сайте. Ваши личные данные не
+            будут проданы или каким-либо образом переданы третьим лицам по каким-либо причинам, за
+            исключением запросов спецслужб или иных случаев, предусмотренных действующим законодательством
+            РФ.</p>
+          <p>4. Раскрытие информации третьим лицам.</p>
+          <p>Мы не продаем, не обмениваем и не передаем личные данные сторонним компаниям и организациям.</p>
+          <p>Мы готовы делиться информацией, чтобы предотвратить преступления или помочь в их расследовании,
+            если речь идет о подозрении на мошенничество, действиях, физически угрожающих безопасности
+            людей, нарушениях правил использования и в иных случаях, когда это предусмотрено законом.</p>
+          <p>5. Защита информации.</p>
+          <p>Мы используем различные средства безопасности, чтобы гарантировать сохранность ваших личных
+            данных. Только те сотрудники, которые работают с конкретным заданием (например, оформление
+            онлайн-заказа) получают доступ к личным данным. Сервера и компьютеры, на которых записана
+            конфиденциальная информация, находятся в безопасном окружении.</p>
+          <p>6. Согласие.</p>
+          <p>Пользуясь услугами нашего сайта, вы автоматически соглашаетесь с нашей политикой
+            конфиденциальности и даете свое согласие на сбор и обработку Ваших персональных данных на
+            условиях и в соответствии с правилами, описанными в настоящем документе.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Закрыть</button>
+        </div>
       </div>
     </div>
 
+    <!-- video -->
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
 </html>
